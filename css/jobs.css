@@ -1,0 +1,54 @@
+  .container {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .image {
+      border-radius: 10px 10px 0px 0px;
+      margin-bottom: 0px;
+      display: block;
+      margin: auto;
+  }
+
+  .card {
+      width: 220px;
+      height: 350px;
+      margin: 5px;
+      border: 1px solid rgb(143, 206, 225);
+      background-color: white;
+      border-radius: 10px;
+  }
+
+  .card:hover {
+      border: 3px solid rgb(140, 220, 233);
+  }
+
+  .sub-container {
+      padding-right: 10px;
+      padding-left: 20px;
+      text-align:justify
+  }
+
+  .job-title {
+      font-size: 18px;
+      font-weight:bold;
+      font-family:sans-serif;
+      
+  }
+
+  .name {
+      font-size: 16px;
+      line-height: 30px;
+      font-family:  Helvetica;
+  }  
+
+  .view {
+    display: block;
+    margin: auto;
+    background-color: blue;
+    color: white;
+    padding: 8px 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
