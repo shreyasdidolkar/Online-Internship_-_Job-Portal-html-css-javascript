@@ -5,10 +5,6 @@
       font-family: Arial, sans-serif;
   }
 
-  body {
-      background: #f2f6fc;
-  }
-
   /* Navbar */
   .navbar {
       background: #2c3e50;
@@ -16,6 +12,7 @@
       padding: 15px;
       display: flex;
       align-items: center;
+      position: sticky;
   }
 
   .nav-logo {
@@ -128,7 +125,7 @@
       border-radius: 6px;
       border: 1px solid gray;
       flex-direction: row;
-      margin: 20px 25px 0px;
+      margin: 100px 25px 0px;
   }
 
   .footer-container {
@@ -212,7 +209,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      margin-top: 40px;
+      margin-top: 80px;
       gap: 15px;
       margin-bottom: 50px;
   }
@@ -233,6 +230,7 @@
       border-radius: 10px;
       transition: 0.3s;
       box-shadow: 0 2px 5px rgba(0, 0, 0);
+      position: -webkit-sticky;
 
   }
 
@@ -320,3 +318,5 @@
           margin-bottom: 20px;
       }
   }
+
+ 
