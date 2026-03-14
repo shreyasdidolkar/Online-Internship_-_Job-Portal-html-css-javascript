@@ -76,19 +76,14 @@
 
 
         <div class="job-section">
-
             <h2>Recommended Jobs & Internships</h2>
-
             <div class="job-list" id="jobList">
-
                 <div class="job-card" data-type="Internship">
                     <h3>Frontend Developer Intern</h3>
                     <p>Company: TechNova</p>
                     <p>Location: Remote</p>
-                   
                     <button onclick="goToJobDetails(this)">Apply</button>
                 </div>
-
                 <div class="job-card" data-type="Full Time">
                     <h3>Backend Developer</h3>
                     <p>Company: CodeCraft</p>
@@ -96,7 +91,6 @@
                     <br/>
                     <button onclick="goToJobDetails(this)">Apply</button>
                 </div>
-
                 <div class="job-card" data-type="Internship">
                     <h3>UI/UX Design Intern</h3>
                     <p>Company: PixelLab</p>
@@ -104,7 +98,6 @@
                     <br/>
                     <button onclick="goToJobDetails(this)">Apply</button>
                 </div>
-
                 <div class="job-card" data-type="Remote">
                     <h3>Data Analyst</h3>
                     <p>Company: DataSphere</p>
@@ -112,7 +105,6 @@
                     <br/>
                     <button onclick="goToJobDetails(this)">Apply</button>
                 </div>
-
                 <div class="job-card" data-type="Full Time">
                     <h3>Frontend Developer</h3>
                     <p>Company: TechSoft</p>
@@ -120,7 +112,6 @@
                     <br/>
                     <button onclick="goToJobDetails(this)">Apply</button>
                 </div>
-
                 <div class="job-card" data-type="Full Time">
                     <h3>Backend Developer</h3>
                     <p>Company: CodeWorks</p>
@@ -159,7 +150,6 @@ navbar.style.display = "none";
 else{
 navbar.style.display = "block";
 }
-
 }
         function searchJobs() {
             let keyword = document.getElementById("jobSearch").value.toLowerCase();
@@ -176,9 +166,7 @@ navbar.style.display = "block";
                 } else {
                     job.style.display = "none";
                 }
-
             });
-
         }
         function goToJobDetails(button) {
             let card = button.parentElement;
@@ -209,11 +197,8 @@ navbar.style.display = "block";
             updateCounter();
         });
         const toggleBtn = document.getElementById("themeToggle");
-
 toggleBtn.addEventListener("click", function () {
-
 document.body.classList.toggle("dark-mode");
-
 if(document.body.classList.contains("dark-mode")){
 toggleBtn.innerHTML = "☀️";
 }
