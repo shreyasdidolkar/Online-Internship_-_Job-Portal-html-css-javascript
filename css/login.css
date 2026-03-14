@@ -21,62 +21,79 @@
 
     /* Navbar */
 
-    .navbar {
-        background: #2c3e50;
-        color: white;
-        padding: 15px;
-        display: flex;
-        align-items: center;
-        width: 100%;
+.navbar{
+background:#2c3e50;
+color:white;
+padding: 12px;
+display:flex;
+align-items:center;
+width:100%;
+}
 
-    }
-
-    .nav-logo {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 3px solid #b1ceec;
-
-    }
-
-    .nav-name {
-        font-size: 28px;
-        font-weight: 700;
-        color: white;
-        margin-left: 12px;
-        margin-right: 40px;
-    }
+.nav-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #b1ceec;
+  
+}
+.nav-name {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+ margin-left: 12px;
+ margin-right: 40px;
+}
 
 
-    .nav-clock {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 14px;
-        font-size: 13px;
-        font-weight: 600;
-        color: white;
-        line-height: 1.3;
-        white-space: nowrap;
-    }
 
-    .active {
-        background-color: #f1c40f;
-        color: black !important;
-        padding: 6px 10px;
-        border-radius: 5px;
-    }
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+  margin-left: auto;
+  
+}
 
-    #dateSpan {
-        font-size: 13px;
-    }
+.menu a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: white
+ 
+}
 
-    #timeSpan {
-        font-size: 14px;
-        font-weight: 700;
-        color: white;
-    }
+.active {
+  background-color: #f1c40f;
+  color: black !important;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+
+.nav-clock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color:white;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+#dateSpan {
+  font-size: 13px;
+}
+
+#timeSpan {
+  font-size: 14px;
+  font-weight: 700;
+  color:white;
+}
 
     footer {
         background-color: #e8ecef;
@@ -689,6 +706,92 @@
         body {
             padding: 10px;
         }
+        @media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .nav-clock {
+        margin-top: 5px;
+    }
+
+    .auth-wrapper {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .field-wrapper input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .submit-button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .welcome-section h2 {
+        font-size: 22px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-box {
+        margin-bottom: 20px;
+    }
+
+}@media (max-width: 992px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 5%;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .auth-wrapper {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .credentials-panel,
+    .welcome-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .welcome-section h2 {
+        font-size: 26px;
+    }
+
+    .credentials-panel form {
+        width: 100%;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+}
 
         .footer {
             margin-top: 20px;
@@ -856,3 +959,4 @@
             font-size: 13px;
         }
     }
+    
